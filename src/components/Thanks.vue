@@ -32,7 +32,7 @@ const options: TypedOptions = {
   font-family: "Courier New", Courier, monospace;
   font-size: 1em;
   padding: 2.5em 1em;
-  width: 29em;
+  width: 15em;
   height: 10em;
   margin: 100px auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -95,5 +95,11 @@ const options: TypedOptions = {
   animation: typeAndDelete 4s steps(11) infinite,
     blinkCursor 0.5s step-end infinite alternate;
   margin-top: 1.5em;
+}
+
+@media(min-width: 450px) {
+  .terminal-loader {
+    width: 29em;
+  }
 }
 </style>
